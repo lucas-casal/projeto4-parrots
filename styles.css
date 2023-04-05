@@ -27,8 +27,8 @@
 }
 .card-box{
     margin-left: 34px;
-    width: 200px;
-    height: 250px;
+    width: 117px;
+    height: 146px;
 }
 .card {
     display: flex;
@@ -39,9 +39,10 @@
   }
 
   .face {
-    width: 200px;
-    height: 250px;
+    width: 117px;
+    height: 146px;
     background-color: #A7E9AF;
+    border: 1px solid #99cea8;
     border-radius: 10px;
     box-shadow: 1px 1px 1px rgba(0,0,0,.3);
     display: flex;
@@ -52,11 +53,25 @@
 
   }
 
-  .front {
-    background-color: blue;
+  .back {
+    background-color: #A7E9AF;
     transform: rotateY(180deg);
   }
 
   .flip {
     transform: rotateY(180deg);
+  }
+  
+  .founded{
+    border: 5px solid greenyellow;
+  }
+
+  .back-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .front-image{
+    width: 100px;
+    height: 100px;
   }
