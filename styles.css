@@ -1,18 +1,46 @@
 .screen-background{
     width: 1110px;
-    height: 629px;
+    height: auto;
     background-color: #EEF9BF;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
-.card {
+.title{
+  background-color: red;
+    width: auto;
+    height: 63px;
+    font-family: "roboto", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -0,4%;
+    line-height: 66px;
+    margin-top: 40px;
+    margin-bottom: 47px;
+}
+.cards-container-desktop{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 34px;
+
+}
+.card-box{
+    margin-left: 34px;
     width: 200px;
     height: 250px;
+}
+.card {
+    display: flex;
     position: relative;
+    justify-content: center;
+    transition: all .5s;
+    transform-style: preserve-3d;
   }
 
   .face {
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 250px;
     background-color: #A7E9AF;
     border-radius: 10px;
     box-shadow: 1px 1px 1px rgba(0,0,0,.3);
@@ -21,18 +49,14 @@
     justify-content: center;
     position: absolute;
     backface-visibility: hidden;
-    transition: all .5s;
-    transform-style: preserve-3d;
+
   }
 
-  .back-face {
+  .front {
+    background-color: blue;
     transform: rotateY(180deg);
   }
 
-  .oncli.back-face {
-    transform: rotateY(0deg);
-  }
-
-  .front-face-clicked {
-    transform: rotateY(-30deg);
+  .flip {
+    transform: rotateY(180deg);
   }
