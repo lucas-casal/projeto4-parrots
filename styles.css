@@ -29,6 +29,7 @@
     margin-left: 34px;
     width: 117px;
     height: 146px;
+    cursor: pointer;
 }
 .card {
     display: flex;
@@ -74,4 +75,8 @@
   .front-image{
     width: 100px;
     height: 100px;
+  }
+
+  .hidden{
+    display: none;
   }
