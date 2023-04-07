@@ -135,7 +135,7 @@ if(document.querySelectorAll(".founded").length === parseInt(cardsNumber)){
         
         while (resetAnswer !== "sim" || resetAnswer !== "não"){
             
-            resetAnswer = prompt("Você quer jogar de novo?");
+            resetAnswer = prompt("Você gostaria de reiniciar a partida? (sim ou não)");
             
             if (resetAnswer === "sim"){
             location.reload();
